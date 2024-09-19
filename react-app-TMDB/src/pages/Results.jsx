@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import MovieList from '../components/MovieList';
 
-const API_KEY = '';
+const API_KEY = '55459cf8dec27b4442e97f5d79b2e662';
 
 const Results = () => {
   const [movies, setMovies] = useState([]);
