@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "SchematicLogo": "url('../../public/schLogo.png')"
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/line-clamp'),

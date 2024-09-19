@@ -11,15 +11,16 @@ const MovieList = ({ movies }) => {
       <div className='flex flex-wrap justify-center gap-5 '>
         {movies.map((movie) => (
               
-          <div key={movie.id} className='border rounded-md shadow-lg	 sm:bg-red-300 md:bg-blue-300 lg:bg-green-300 w-[200px]'>
-            <img src={"https://image.tmdb.org/t/p/w200" + movie.poster_path}   alt="" />   
+          <div key={movie.id} className='border rounded-md shadow-lg  w-[200px] bg-[#F8F8FF] '>
+            <img src={"https://image.tmdb.org/t/p/w200" + movie.poster_path}  alt="" />   
             <div className='h-auto p-2 '>
               <h3 className='font-bold line-clamp-2'>{movie.title}</h3>
               <p className='italic line-clamp-2 '>{movie.overview}</p>
               <p className='font-bold'>Release Date: {movie.release_date}</p>
               <p>Popularity: {movie.popularity}</p>
               <p>Rating: {movie.vote_average + "/10"}</p>
-              <button></button>
+              <Link to={`/movie/${movie.id}`}><button className='border mt-3 py-1 px-2 rounded-md hover:bg-green-500 hover:text-white duration-200 font-mono bg-green-300'>More Detail</button></Link>
+              
             </div>           
           </div>
            ))}

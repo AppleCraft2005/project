@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import MovieList from '../components/MovieList';
+import SearchBar from "../components/SearchBar";
 
 const API_KEY = '55459cf8dec27b4442e97f5d79b2e662';
 
@@ -32,9 +33,10 @@ const Results = () => {
   }, [query]);
 
   return (
-    <div className='m-4'>
-      <h2>Search Results for "{query}"</h2>
-      <div className='py-2'>
+    <div className='p-4 bg-[#FFFFF0] '>
+      <SearchBar />
+      <h2 className='font-bold text-center text-xl pb-4'>Search Results for "{query}"</h2>
+      <div className=''>
       {loading ? <p>Loading...</p> : <MovieList movies={movies} />}
       </div>
     </div>
