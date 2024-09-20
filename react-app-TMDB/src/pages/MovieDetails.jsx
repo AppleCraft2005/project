@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom';
 
 const API_KEY = '55459cf8dec27b4442e97f5d79b2e662';
 
@@ -60,12 +61,12 @@ const MovieDetails = () => {
   const genreNames = getGenreNames(movie.genres.map((genre) => genre.id));
 
   return (
-    <div className='bg-[#FFFFF0]'>
-      <Header />
-      <div className='px-4 pb-4 flex justify-center'>
-        <div className='sm:w-3/4'>
+    <div className='bg-[#FAF9F6]'>
+      <Link to="../"><Header /></Link>
+      <div className='px-4 pb-4 flex justify-center  '>
+        <div className='sm:w-3/4 bg-[#F8F8FF] border rounded-md p-3 shadow-lg'>
           <h2 className='font-bold text-3xl mb-3 text-green-500 text-center'>{movie.title}</h2>
-          <img src={"https://image.tmdb.org/t/p/w300" + movie.poster_path} className='mb-3 ' alt={movie.title} />
+          <img src={"https://image.tmdb.org/t/p/w300" + movie.poster_path} className='mb-3 mx-auto' alt={movie.title} />
           <p className='text-justify mb-3 text-gray-500'>{movie.overview}</p>
           <p><span className='font-bold text-green-500'>Genres:</span> {genreNames.join(', ')}</p> {/* Display the genres */}
           <p><span className='font-bold text-green-500'>Release Date:</span> {movie.release_date}</p>

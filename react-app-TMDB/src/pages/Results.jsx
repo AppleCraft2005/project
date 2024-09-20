@@ -37,8 +37,8 @@ const Results = () => {
   }, [query]);
 
   return (
-    <div className=' bg-[#FFFFF0] '>
-      <Link to="./Home.jsx"><Header /></Link>
+    <div className=' bg-[#FAF9F6] '>
+      <Link to="../"><Header /></Link>
       <SearchBar />
       <h2 className='font-bold text-center text-xl '>Search Results for "{query}"</h2>
       <div className='p-4'>
