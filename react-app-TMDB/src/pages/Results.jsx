@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Footer'
 
 
-const API_KEY = '55459cf8dec27b4442e97f5d79b2e662';
+console.log(process.env);
 
 const Results = () => {
   const [movies, setMovies] = useState([]);
@@ -20,7 +20,7 @@ const Results = () => {
     const fetchMovies = async () => {
       try {
         const response = await axios.get(
-          `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`
+          `https://api.themoviedb.org/3/search/movie?REACT_APP_API_KEY=${REACT_APP_API_KEY}&query=${query}`
         );
         setMovies(response.data.results);
         console.log(response.data.results);

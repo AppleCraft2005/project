@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom';
 
-const API_KEY = '55459cf8dec27b4442e97f5d79b2e662';
+console.log(process.env);
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -17,7 +17,7 @@ const MovieDetails = () => {
     const fetchMovieDetails = async () => {
       try {
         const movieResponse = await axios.get(
-          `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
+          `https://api.themoviedb.org/3/movie/${id}?REACT_APP_API_KEY=${REACT_APP_API_KEY}`
         );
         setMovie(movieResponse.data);
       } catch (error) {
@@ -28,7 +28,7 @@ const MovieDetails = () => {
     const fetchGenres = async () => {
       try {
         const genresResponse = await axios.get(
-          `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`
+          `https://api.themoviedb.org/3/genre/movie/list?REACT_APP_API_KEY=${REACT_APP_API_KEY}&language=en-US`
         );
         setGenres(genresResponse.data.genres);
       } catch (error) {
