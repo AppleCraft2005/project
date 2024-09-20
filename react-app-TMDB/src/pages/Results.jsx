@@ -3,6 +3,10 @@ import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import MovieList from '../components/MovieList';
 import SearchBar from "../components/SearchBar";
+import Header from "../components/Header"
+import { Link } from 'react-router-dom';
+import Footer from '../components/Footer'
+
 
 const API_KEY = '55459cf8dec27b4442e97f5d79b2e662';
 
@@ -33,12 +37,14 @@ const Results = () => {
   }, [query]);
 
   return (
-    <div className='p-4 bg-[#FFFFF0] '>
+    <div className=' bg-[#FFFFF0] '>
+      <Link to="./Home.jsx"><Header /></Link>
       <SearchBar />
-      <h2 className='font-bold text-center text-xl pb-4'>Search Results for "{query}"</h2>
-      <div className=''>
+      <h2 className='font-bold text-center text-xl '>Search Results for "{query}"</h2>
+      <div className='p-4'>
       {loading ? <p>Loading...</p> : <MovieList movies={movies} />}
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const API_KEY = '55459cf8dec27b4442e97f5d79b2e662';
 
@@ -58,14 +60,24 @@ const MovieDetails = () => {
   const genreNames = getGenreNames(movie.genres.map((genre) => genre.id));
 
   return (
-    <div>
-      <h2>{movie.title}</h2>
-      <p>{movie.overview}</p>
-      <p>Release Date: {movie.release_date}</p>
-      <p>Rating: {movie.vote_average}</p>
-      <p>Genres: {genreNames.join(', ')}</p> {/* Display the genres */}
+    <div className='bg-[#FFFFF0]'>
+      <Header />
+      <div className='px-4 pb-4 flex justify-center'>
+        <div className='sm:w-3/4'>
+          <h2 className='font-bold text-3xl mb-3 text-green-500 text-center'>{movie.title}</h2>
+          <img src={"https://image.tmdb.org/t/p/w300" + movie.poster_path} className='mb-3 ' alt={movie.title} />
+          <p className='text-justify mb-3 text-gray-500'>{movie.overview}</p>
+          <p><span className='font-bold text-green-500'>Genres:</span> {genreNames.join(', ')}</p> {/* Display the genres */}
+          <p><span className='font-bold text-green-500'>Release Date:</span> {movie.release_date}</p>
+          <p><span className='font-bold text-green-500'>Original Language:</span> {movie.original_language}</p>
+          <p><span className='font-bold text-green-500'>Popularity:</span> {movie.popularity}</p>
+          <p><span className='font-bold text-green-500'>Rating:</span> {movie.vote_average} /10</p>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
+
 };
 
 export default MovieDetails;
