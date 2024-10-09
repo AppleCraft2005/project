@@ -17,7 +17,7 @@ const MovieDetails = () => {
     const fetchMovieDetails = async () => {
       try {
         const movieResponse = await axios.get(
-          `https://api.themoviedb.org/3/movie/${id}?api_key=${APP_API_KEY}`
+          `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
         );
         setMovie(movieResponse.data);
       } catch (error) {
@@ -28,7 +28,7 @@ const MovieDetails = () => {
     const fetchGenres = async () => {
       try {
         const genresResponse = await axios.get(
-          `https://api.themoviedb.org/3/genre/movie/list?api_key=${APP_API_KEY}&language=en-US`
+          `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`
         );
         setGenres(genresResponse.data.genres);
       } catch (error) {
