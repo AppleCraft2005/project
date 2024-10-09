@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom';
 
-const API_KEY = '';
+const API_KEY = '55459cf8dec27b4442e97f5d79b2e662';
 
 const MovieDetails = () => {
   const { id } = useParams();
