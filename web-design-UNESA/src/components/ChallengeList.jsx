@@ -18,7 +18,7 @@ const ChallengeList = ({ onChallengeComplete }) => {
                     {challenges.map((challenge) => (
                         <li key={challenge.id} className='bg-white p-6 rounded-lg shadow-md flex justify-between items-center'>
                             {challenge.title} - {challenge.points} poin
-                            <Button onClick={() => onChallengeComplete(challenge)}>Selesaikan</Button>
+                            <button onClick={() => onChallengeComplete(challenge)} className="py-2 px-5 bg-ijotua text-white rounded-md hover:bg-[#3d8e40] duration-300">Selesaikan</button>
                         </li>
                     ))}
                 </ul>

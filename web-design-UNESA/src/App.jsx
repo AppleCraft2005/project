@@ -31,7 +31,6 @@ function App() {
       <Challenges onCompleteChallenge={handleCompleteChallenge} />
       <Leaderboard users={users} />
       <Community></Community>
-      <Resources></Resources>
       <Footer />
     </div>
       

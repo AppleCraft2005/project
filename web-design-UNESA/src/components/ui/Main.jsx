@@ -24,7 +24,7 @@ const Main = () => {
                 <div className="text-center font-semibold text-3xl mb-10">
                     <h1 >Apa itu GreenTI </h1>
                 </div>
-                <div className="md:flex ">
+                <div className="md:flex">
                     <div className="basis-1/2 flex justify-center">
                         <img src={challenge} className="w-64" alt="" />
                     </div>
