@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Footer'
 
 
-const API_KEY = '55459cf8dec27b4442e97f5d79b2e662';
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const Results = () => {
   const [movies, setMovies] = useState([]);
