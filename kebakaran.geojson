@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "KB1",
+        "nama": "Kebakaran Pasar Lama",
+        "deskripsi": "Kebakaran terjadi di area pertokoan Pasar Lama"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.5870, -3.3170]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "KB2",
+        "nama": "Kebakaran Sungai Jingah",
+        "deskripsi": "Kebakaran di permukiman padat penduduk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.6112, -3.3130]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "KB3",
+        "nama": "Kebakaran Simpang Ulin",
+        "deskripsi": "Kebakaran akibat korsleting listrik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.6205, -3.3350]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "KB4",
+        "nama": "Kebakaran Kampung Melayu",
+        "deskripsi": "Kebakaran besar yang merusak beberapa rumah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.6250, -3.3502]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "KB5",
+        "nama": "Kebakaran Teluk Dalam",
+        "deskripsi": "Kebakaran kecil cepat ditangani warga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.6001, -3.3123]
+      }
+    }
+  ]
+}
