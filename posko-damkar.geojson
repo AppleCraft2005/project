@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DPK",
+        "nama": "Dinas Pemadam Kebakaran dan Penyelamatan Banjarmasin",
+        "alamat": "Jl. R.E. Martadinata No.1, Kertak Baru Ilir, Banjarmasin Tengah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.5905, -3.3181]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PSM",
+        "nama": "Posko Pemadam Kebakaran Seberang Mesjid",
+        "alamat": "Jl. Pahlawan, Seberang Mesjid, Banjarmasin Tengah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.5947, -3.3195]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "GSF",
+        "nama": "Posko Pemadam Kebakaran GSFD Banjarmasin",
+        "alamat": "Jl. Cempaka Raya, Wildan Sari, Teluk Dalam, Banjarmasin Tengah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.5950, -3.3167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "PRB",
+        "nama": "Posko BPK Swasta Pribumi-01",
+        "alamat": "Jl. P. Hidayatullah, Komplek Lestari Karya No.25, Benua Anyar, Banjarmasin Timur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.6100, -3.3250]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SKL",
+        "nama": "Posko BPK Sekeluarga",
+        "alamat": "Jl. Martapura Lama, Gudang Hirang, Banjarmasin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.6400, -3.3600]
+      }
+    }
+  ]
+}
